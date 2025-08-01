@@ -3,7 +3,7 @@
 **Bongo SMS** is a lightweight, offline-friendly, peer-to-peer messaging web app designed to run on a local Raspberry Pi network. It's perfect for LAN-only group chats without any internet connection.
 
 ## Features
-
+...
 - 🗨️ Real-time group messaging
 - 💾 Messages persist on the server (JSON-based)
 - 📡 Completely offline-capable (ideal for Raspberry Pi + Wi-Fi AP setups)
@@ -11,7 +11,7 @@
 - 🔒 No external internet access required
 - 🌙 Dark gradient theme with light message bubbles
 - 🧠 Remembers user via localStorage
-
+...
 ## How It Works
 
 - The Raspberry Pi runs a local server (e.g., Node.js with Express).
@@ -19,3 +19,12 @@
 - Users choose a username (stored in their browser).
 - Messages are sent to the Pi's local server and displayed to all clients.
 - All traffic stays local and private to the LAN.
+
+
+...
+
+## Important Security Note
+
+- **No encryption is implemented.**  
+  This app is designed to run **only on a trusted local area network (LAN)**, such as a Raspberry Pi Wi-Fi hotspot.  
+  All messages are sent in plaintext within the LAN and should **not** be used over public or untrusted networks.
